@@ -10,13 +10,15 @@ for Getting Cities worldwide
 
 2. --> GeoDB Cities API: https://rapidapi.com/wirefreethought/api/geodb-cities/
 
-# Need to Install two Module To get Days Information
+# Have used two Module for better suitability.
 
-1. npm i react-accessible-accordion //for days forcasting
+1. npm i react-accessible-accordion  //for displaying days forcasting
 
 2. npm i react-select-async-paginate --force
 
 
-Contact info.
+Contact info
+
 Developer name: Anmol Kansal
-email: anmolkansal287@gmail.com
+
+Email: anmolkansal287@gmail.com
