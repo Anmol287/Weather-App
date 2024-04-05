@@ -1,8 +1,14 @@
 body {
-    margin: 0;
-    font-family: "Roboto", Arial !important;
-    background-color: #d5d4d4;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
- 
+  font-family: "Roboto", Arial !important;
+  background-color: #d5d4d4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("/background1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  margin: 0;
+  padding: 1%;
 }

@@ -10,7 +10,7 @@ function App() {
   const [forecast, setForecast] = useState(null);
 
   const handleOnSearchChange = (searchData) => {
-    // console.log(searchData);
+
     const [lat, lon] = searchData.value.split(" ")
 
     const currentweatherfetch = fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`)
@@ -27,14 +27,16 @@ function App() {
       .catch((err) => console.log(err));
 
   }
-  // console.log(currentWeather);
-  // console.log(forecast);
 
   return (
     <div className='container'>
+      <h1 className='heading'>Explore the Skies: Enter City to Uncover Weather</h1>
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <Currentweather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
+      <div className='footer'>
+        &copy; {new Date().getFullYear()} Anmol Kansal. All rights reserved.
+      </div>
     </div>
   )
 }
